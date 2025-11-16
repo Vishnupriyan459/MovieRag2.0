@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 load_dotenv()
 # uri = os.getenv("MONGO_URI")
-# uri = "mongodb+srv://vpriyan459:rEy3nzjMiAgf1azf@cluster0.75l07ql.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+
 uri = "mongodb://localhost:27017" #it local one
 
 # Create a new client and connect to the server
