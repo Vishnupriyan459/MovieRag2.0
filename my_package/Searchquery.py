@@ -29,7 +29,7 @@ def export_movie_search(query_text: str, top_k: int = 5) -> str:
         score = res['score']
         full_text = movie_texts.get(movie_id, "")
         export_text += f"Movie ID: {movie_id}, Score: {score:.4f}\nPreview:\n{full_text}\n\n"
-    print(export_text)
+    # print(export_text)
     return export_text
 
 # 🔍 New: Fetch context by title (exact or fuzzy match)
