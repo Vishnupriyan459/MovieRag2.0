@@ -20,7 +20,7 @@ This project includes model files, configuration scripts, and movie metadata for
 * Uses `movie_index.faiss` and `movie_ids.pkl`  
 * Modular API and model structure  
 
-### Frontend (Streamlit)
+### Frontend (Streamlit & Next js app)
 
 * Interactive search UI  
 * Real-time recommendations  
@@ -44,6 +44,7 @@ This project includes model files, configuration scripts, and movie metadata for
 | API Architecture | REST |
 
 ## Project Structure
+<img width="" height="576" alt="image" src="https://github.com/user-attachments/assets/e243cea4-667d-41e6-84a9-cdd6cdd5c360" />
 
 ## System Architecture
 
