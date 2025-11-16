@@ -45,4 +45,79 @@ This project includes model files, configuration scripts, and movie metadata for
 
 ## Project Structure
 
+## System Architecture
+
+> Streamlit UI  
+> sends queries to  
+>> FastAPI Backend  
+>> which interacts with  
+>>> FAISS Vector Database  
+>>> and MongoDB Metadata Storage  
+
+## API Examples
+
+### Search Movies
+
+
+
+GET /api/movies/search?q=Inception
+
+
+### Get Recommendations
+
+
+
+GET /api/movies/recommend?id=<movie_id>
+
+
+## Setup Instructions
+
+### Clone the Repository
+
+
+
+git clone https://github.com/your-username/MovieRag2.0.git
+
+cd MovieRag2.0
+
+
+### Install Dependencies
+
+
+
+pip install -r requirements.txt
+
+
+### Run Backend
+
+
+
+uvicorn backend.main:app --reload
+
+
+### Start Frontend
+
+
+
+streamlit run frontend/app.py
+
+
+## Environment Configuration
+
+Create a `.env` file:
+
+
+
+MONGODB_URI=mongodb://localhost:27017
+DB_NAME=movies
+FAISS_INDEX_PATH=backend/movie_index.faiss
+MOVIE_ID_MAP_PATH=backend/movie_ids.pkl
+
+
+## Future Improvements
+
+1. Add TMDB or IMDB API integration  
+2. Deploy backend and frontend  
+3. Improve LLM reasoning  
+4. Add user profiles and favorites  
 
